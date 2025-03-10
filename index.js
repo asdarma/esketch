@@ -14,10 +14,8 @@ function createGrid(size) {
             console.log("mouseover");
         });
     gridContainer.appendChild(square);
-    }
-}
-
-createGrid(16);
+    };
+};
 
 buttonSize.addEventListener("click", () => {
     gridContainer.innerHTML = "";
@@ -27,4 +25,9 @@ buttonSize.addEventListener("click", () => {
     else {
         return createGrid(size);
     };
+});
+
+buttonReset.addEventListener("click", () => {
+    gridContainer.innerHTML = "";
+    createGrid(16);
 });
