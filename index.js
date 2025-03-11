@@ -17,6 +17,8 @@ function createGrid(size) {
     };
 };
 
+createGrid(16);
+
 buttonSize.addEventListener("click", () => {
     gridContainer.innerHTML = "";
     let size = prompt("TYPE THE SIZE OF THE GRID (1-50)");
